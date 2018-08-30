@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * @created on  : 2018/8/22
  */
 public class CoinApiTest {
-    BitKeepClient client = new BitKeepClient("ucmFg6lU7MX15dtHwZaGAhnIEjQfKeky", "QMdqcF4Eh3EXsVxYab8mMaH8CV606gYNfbSz9jKlicKLDPpUgt97WArftTmI1d0H").init();
+    BitKeepClient client = new BitKeepClient("ucmFg16lU7MX15dtHwZaGAhnIEjQfKeky", "QMdqcF4Eh3EXsVxYab8mMaH8CV606gY4NfbSz9jKlicKLDPpUgt97WArftTmI1d0H").init();
 
     @Test
     public void testSearch() {
