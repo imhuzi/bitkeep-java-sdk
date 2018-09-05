@@ -21,7 +21,7 @@ import java.util.ArrayList;
  */
 public class AccountApiTest {
 
-    BitKeepClient client = new BitKeepClient("ucmFg6lU7MX15dtHw2ZaGAhnIEjQfKeky", "QMdqcF4Eh3EXsVxYab8mMaH8CV606gYNfbSz9jK2licKLDPpUgt97WArftTmI1d0H").init();
+    BitKeepClient client = new BitKeepClient("", "").init();
 
     @Test
     public void testInit() {
