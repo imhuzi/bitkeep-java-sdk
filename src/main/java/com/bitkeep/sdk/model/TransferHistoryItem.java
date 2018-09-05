@@ -8,7 +8,7 @@ import lombok.Data;
  * @created on  : 2018/8/23
  */
 @Data
-public class TransferHistoryItem {
+public class TransferHistoryItem  extends NoneData{
     /**
      * out:转账 in:充值
      */

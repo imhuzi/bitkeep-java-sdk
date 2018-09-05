@@ -8,7 +8,7 @@ import lombok.Data;
  * @created on  : 2018/8/23
  */
 @Data
-public class TransferFeeItem {
+public class TransferFeeItem  extends NoneData{
     /**
      * 如果fee为0表示免手续费
      */

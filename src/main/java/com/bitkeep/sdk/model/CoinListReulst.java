@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @created on  : 2018/8/6
  */
 @Data
-public class CoinListReulst {
+public class CoinListReulst  extends NoneData{
 
     private Integer total;
     private ArrayList<CoinListItem> items;

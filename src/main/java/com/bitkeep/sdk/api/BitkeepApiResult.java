@@ -6,6 +6,8 @@ package com.bitkeep.sdk.api;
 
 import com.bitkeep.sdk.constant.BitKeepConstants;
 import com.bitkeep.sdk.constant.ResultStatus;
+import com.bitkeep.sdk.model.CoinDetail;
+import com.bitkeep.sdk.model.NoneData;
 import com.bitkeep.sdk.model.Result;
 import com.bitkeep.sdk.utils.JsonUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -216,7 +218,12 @@ public interface BitkeepApiResult {
 
         @Override
         public Result<T> response(String rsp) throws Exception {
-            return JsonUtil.<Result<T>>toObject(rsp, getTypeReference());
+            Result<T> obj = JsonUtil.<Result<T>>toObject(rsp, getTypeReference());
+            if (obj == null) {
+                obj = JsonUtil.<Result<T>>toObject(rsp, new TypeReference<Result<NoneData>>() {
+                });
+            }
+            return obj;
         }
 
         @Override

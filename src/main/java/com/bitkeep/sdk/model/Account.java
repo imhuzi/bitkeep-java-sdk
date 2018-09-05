@@ -8,6 +8,6 @@ import lombok.Data;
  * @created on  : 2018/8/6
  */
 @Data
-public class Account {
+public class Account  extends NoneData{
     private Double amount;
 }

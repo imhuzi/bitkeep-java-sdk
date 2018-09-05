@@ -8,7 +8,7 @@ import lombok.Data;
  * @created on  : 2018/8/6
  */
 @Data
-public class CoinSearchResultItem {
+public class CoinSearchResultItem  extends NoneData{
     private String coin;
     private String name;
     private String cnName;

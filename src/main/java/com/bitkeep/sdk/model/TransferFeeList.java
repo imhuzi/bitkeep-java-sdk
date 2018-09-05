@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.ArrayList;
 
 @Data
-public class TransferFeeList {
+public class TransferFeeList extends NoneData {
     /**
      * 如果items为[] 表示无法转账到链上，可在应用内部交易
      */
